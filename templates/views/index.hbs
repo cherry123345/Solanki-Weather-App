@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Weather</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            {{>header}}
+
+            <p id="hell">Use this site to get 100% accurate weather</p>
+
+            <form>
+                <input class="index" placeholder="Location">
+                <button>Search</button>
+            </form>
+
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+        {{>footer}}
+
+        <script src="js/app.js"></script>
+    </body>
+  
+</html>
