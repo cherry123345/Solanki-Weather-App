@@ -6,6 +6,9 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
+const port = process.env.PORT || 3000
+
+// paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewspath = path.join(__dirname, '../templates/views')
 const partialspath = path.join(__dirname, '../templates/partials')
@@ -85,19 +88,8 @@ app.get('*',(req ,res) => {
 })
 
 
-app.listen('3000', () => {
-    console.log('got it boosss')
+app.listen('port', () => {
+    console.log('got it boosss. on' + port)
 })
 
 
-// app.get('/products', (req ,res) => {
-//     if (!req.query.search){
-//         res.send({
-//             error: 'You must provide a search item'
-//         })
-//     }
-//     console.log(req.query.search)
-//     res.send({
-//         product: []
-//     })
-// })
