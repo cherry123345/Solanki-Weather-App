@@ -88,8 +88,8 @@ app.get('*',(req ,res) => {
 })
 
 
-app.listen('port', () => {
-    console.log('got it boosss. on' + port)
+app.listen(port, () => {
+    console.log('got it boosss. on ' + port)
 })
 
 
